@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --Poppins: "Poppins", sans-serif;
+  --Inter: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Poppins);
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(353deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 73%, rgb(47, 48, 219) 100%, rgb(3, 2, 33) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.font-inter {
+  font-family: var(--Inter);
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.gap-1 {
+  gap: 0.3rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+header {
+  background: transparent;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Pacifico", cursive;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  display: block;
+  padding: 0.2rem 0;
+  margin: 0 0.9rem;
+  position: relative;
+}
+ul li a:hover {
+  color: white;
+}
+ul li a:after {
+  transition: 0.3s ease-out transform;
+  transform-origin: left;
+  content: "";
+  position: absolute;
+  background: white;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  bottom: -3px;
+  border-radius: 25px;
+  transform: scale(0);
+}
+ul li a:hover::after {
+  transform: scale(1);
+}
+
+.nav__right button {
+  padding: 0.3rem 1rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: white;
+  font-weight: 500;
+  font-family: var(--Inter);
+}
+.nav__right .non_btn {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+.nav__right .non_btn:hover {
+  color: white;
+}
+
+section {
+  position: relative;
+}
+
+.hero__headline_top_bar {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 8rem;
+  margin-inline: auto;
+  padding: 0.3rem 1rem;
+  font-size: 0.7rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.6;
+}
+h1 .highlight_color {
+  color: #fff78a;
+}
+
+.ball-one {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #19164b;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.two {
+  -webkit-clip-path: circle(50.9% at 14% 31%);
+  clip-path: circle(50.9% at 14% 31%);
+}
+
+.a {
+  left: 50%;
+  top: -40%;
+  opacity: 0.5;
+}
+
+.b {
+  left: 10%;
+  top: 30%;
+}
+
+.c {
+  left: 90%;
+  top: 50%;
+}
+
+.d {
+  left: 40%;
+  top: 100%;
+}
+
+.e {
+  left: 40%;
+  top: -20%;
+}/*# sourceMappingURL=style.css.map */
